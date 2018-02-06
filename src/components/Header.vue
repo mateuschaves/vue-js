@@ -1,13 +1,19 @@
 <template>
     <header>
-        <h1> {{ teste }} </h1>
+        <h1 v-on:click="changeTitle"> {{ title }} </h1>
     </header>
 </template>
 <script>
 export default {
+  props:['title'],
   data () {
     return {
-      teste:'Vue Ninjas'
+      title:'Vue Ninjas'
+    }
+  },
+  methods:{
+    changeTitle:function(){
+      this.title = "Vue Wizards";
     }
   }
 }
