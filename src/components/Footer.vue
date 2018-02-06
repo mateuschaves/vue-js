@@ -7,7 +7,7 @@
 export default {
   data () {
     return {
-      copyright: 'Copyright 2018 meu pau torto pra esquerda'
+      copyright: 'Copyright 2018'
     }
   }
 }
